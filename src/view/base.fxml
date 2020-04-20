@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox prefHeight="485.0" prefWidth="685.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.baseController">
+   <children>
+      <MenuBar VBox.vgrow="ALWAYS">
+        <menus>
+          <Menu mnemonicParsing="false" text="File">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Close" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text=" Sytem Products">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#loadshop" text="Shop Products" />
+                  <MenuItem mnemonicParsing="false" onAction="#loadwareproducts" text="Warehouse Products" />
+            </items>
+          </Menu>
+            <Menu mnemonicParsing="false" text=" Sytem Sales">
+               <items>
+                  <MenuItem mnemonicParsing="false" onAction="#loadshopsales" text="Shop sales" />
+                  <MenuItem mnemonicParsing="false" onAction="#loadwsales" text="Warehouse Sales" />
+               </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text=" Sytem Employees">
+               <items>
+                  <MenuItem mnemonicParsing="false" onAction="#loadsemployees" text="Shop Employees" />
+                  <MenuItem mnemonicParsing="false" onAction="#loadwemployees" text="Warehouse Employees" />
+               </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text=" Sytem Logs">
+               <items>
+                  <MenuItem mnemonicParsing="false" onAction="#loadslogs" text="Shop Logs" />
+                  <MenuItem mnemonicParsing="false" onAction="#loadwlogs" text="Warehouse Logs" />
+               </items>
+            </Menu>
+          <Menu mnemonicParsing="false" text="Reports">
+            <items>
+              <MenuItem mnemonicParsing="false"  onAction="#loadwreport" text="Warehouse Report" />
+                <MenuItem mnemonicParsing="false"  onAction="#loadsreport" text="Sales Report" />
+                <MenuItem mnemonicParsing="false"  onAction="#loadireport" text="Inventory Report" />
+
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+      <VBox fx:id="container" prefHeight="200.0" prefWidth="100.0" VBox.vgrow="ALWAYS" />
+   </children>
+</VBox>

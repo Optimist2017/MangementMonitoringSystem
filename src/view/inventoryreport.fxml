@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.*?>
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="471.0" prefWidth="677.0" spacing="5.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.IreportController">
+   <children>
+      <VBox prefHeight="400.0" prefWidth="355.0" style="-fx-border-color: #ccc; -fx-border-radius: 10;" HBox.hgrow="ALWAYS">
+         <padding>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </padding>
+         <children>
+            <Label text="Warehouse Inventory Report" />
+            <PieChart fx:id="wpiechart" VBox.vgrow="ALWAYS" />
+         </children>
+      </VBox>
+      <VBox prefHeight="400.0" prefWidth="318.0" style="-fx-border-color: #ccc; -fx-border-radius: 10;" HBox.hgrow="ALWAYS">
+         <children>
+            <Label text="Sales Inventory Report" />
+            <PieChart fx:id="spiechart" VBox.vgrow="ALWAYS" />
+         </children>
+         <padding>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </padding>
+      </VBox>
+   </children>
+   <padding>
+      <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+   </padding>
+</HBox>
